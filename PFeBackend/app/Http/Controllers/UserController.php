@@ -30,8 +30,6 @@ class UserController extends Controller
             $user->save();
             return $user;
             // return $request->input();
-
-
     }
     function login(Request $request){
         // $request->validate([
