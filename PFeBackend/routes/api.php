@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -29,7 +31,8 @@ Route::get('categoryBook/{key}',[BookController::class,'BookCatFind']);
 Route::get('format/{key}',[BookController::class,'format']);
 
 // Route::get('bookSearch/{book}',[BookController::class,'BookCatFind']);
-
+Route::post('signup',[UserController::class,'signup']);
+Route::post('login',[UserController::class,'login']);
 
 
 
